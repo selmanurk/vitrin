@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vitrin | Vitrin</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#9d4221",
+                    "secondary-container": "#cde7bf",
+                    "surface-container": "#f0ede8",
+                    "surface-dim": "#dcdad5",
+                    "surface-variant": "#e5e2dd",
+                    "on-background": "#1c1c19",
+                    "secondary": "#4e6545",
+                    "secondary-fixed-dim": "#b4cea7",
+                    "surface-container-high": "#ebe8e3",
+                    "on-secondary-fixed-variant": "#374c2f",
+                    "surface": "#fcf9f4",
+                    "on-tertiary-fixed-variant": "#61401b",
+                    "inverse-surface": "#31302d",
+                    "on-primary-fixed": "#390c00",
+                    "outline-variant": "#dcc1b8",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#ffb59d",
+                    "on-surface-variant": "#56423c",
+                    "primary-container": "#ba5735",
+                    "on-secondary-container": "#526948",
+                    "on-tertiary-container": "#fffbff",
+                    "tertiary-fixed-dim": "#eebd8e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#7e2c0c",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdcbd",
+                    "primary-fixed-dim": "#ffb59d",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#fffbff",
+                    "primary": "#9a401f",
+                    "on-secondary-fixed": "#0c2007",
+                    "primary-fixed": "#ffdbd0",
+                    "error": "#ba1a1a",
+                    "surface-container-highest": "#e5e2dd",
+                    "outline": "#89726b",
+                    "surface-container-low": "#f6f3ee",
+                    "tertiary": "#79542e",
+                    "on-surface": "#1c1c19",
+                    "background": "#fcf9f4",
+                    "surface-bright": "#fcf9f4",
+                    "secondary-fixed": "#d0eac2",
+                    "on-tertiary-fixed": "#2c1600",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#956c44",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "inverse-on-surface": "#f3f0eb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcf9f4; color: #1c1c19; }
+        .font-epilogue { font-family: 'Epilogue', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold text-orange-900 font-epilogue tracking-tight">Vitrin</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-orange-900 font-bold border-b-2 border-orange-800 transition-colors py-1" href="#">Menü</a>
+<a class="text-stone-600 hover:text-orange-700 transition-colors py-1" href="#">Hikayemiz</a>
+<a class="text-stone-600 hover:text-orange-700 transition-colors py-1" href="#">Atölye</a>
+<a class="text-stone-600 hover:text-orange-700 transition-colors py-1" href="#">Galeri</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:bg-primary-container transition-all active:scale-95 duration-200">
+                Sipariş Ver
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-12 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 space-y-8">
+<div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-sm"></span>
+<span class="text-sm font-semibold tracking-wide uppercase">Sevgiyle El Yapımı</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold font-epilogue text-primary leading-[1.1] tracking-tight">
+                    Kalbin <br/> Ocakla Buluştuğu Yer.
+                </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">
+                    Her ürün sevginin emeğidir. Geleneksel taş fırınımızda pişirilen, taze ve doğal lezzetler.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full text-lg font-bold shadow-lg shadow-primary/20 hover:bg-primary-container transition-all">
+                        Günlük Menüyü Keşfet
+                    </button>
+<button class="bg-surface-container-high text-on-surface-variant px-8 py-4 rounded-full text-lg font-bold hover:bg-surface-container-highest transition-all">
+                        Mağazamızı Ziyaret Edin
+                    </button>
+</div>
+</div>
+<div class="md:col-span-6 relative">
+<div class="relative z-10 rounded-xl overflow-hidden shadow-2xl transform md:translate-x-4 md:-translate-y-4">
+<img alt="Artisan sourdough" class="w-full h-[500px] object-cover" data-alt="Close-up of freshly baked artisan sourdough bread on a rustic wooden table with soft morning sunlight catching the flour dusting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbN6GvL9ZB5WbWxcUKasnSw0WCJcsKjnbfG8bpF_cqlcIX1zhKDlAoG5oWCYT3ZvDby9cKgQQv-iUK4Obv-Q9ZkQ_jaB-43Qfc2ZLU3dhagXjif5adzmmC7yu-ExXv6VXxLY_m3DGI3mP4dWJ67dwiyx9jCErbSQ_lGoGMRcu5aycShHKHc_-U3k8qzbgWnigbtRMhnzQPUAHHoH1CeF74CdPpYoC2b_4-TpwnAne06toBtiNs9KIbRpXEmzO4396fIRy-fqPCUShs"/>
+</div>
+<div class="absolute -bottom-8 -left-8 z-20 w-48 h-48 rounded-xl overflow-hidden border-8 border-background shadow-xl hidden md:block">
+<img alt="Baker hands" class="w-full h-full object-cover" data-alt="Baker's hands covered in white flour gently kneading dough on a dark stone countertop in a warm cozy kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLLGl7_HIMNR7P2Y2TtpqlBANh_uf0O2M4o9oe2os9TkHpTI452R7OWuriNWtxAx81qrTy7zyhEc2LNrvzlNunu7f7YhhvMhLAQoanhyL9jwLnV6IcBY1orYv49SQ_r3pKVkqlHpXeHTvrM5-UZ7eQRpUfaq6AfM1iyUhrYpoafV7IVPNINlq-l_k6MPeSbKDZkpQmmrnx9BWuor0o-0JNCNhnayEakDBMJqoHLwOx1EPNXqe9zqsOqAG3nwFFfqlKVpy96-NE9Gr1"/>
+</div>
+<div class="absolute top-12 -right-8 -z-10 w-full h-full bg-secondary-container rounded-xl"></div>
+</div>
+</section>
+<!-- Daily Offerings Section -->
+<section class="bg-surface-container-low py-24 mt-12 rounded-t-[3rem] md:rounded-t-[5rem]">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="space-y-4">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm">Özenle Hazırlananlar</span>
+<h2 class="text-4xl md:text-5xl font-extrabold font-epilogue text-on-surface">Günlük Ürünlerimiz</h2>
+</div>
+<p class="text-on-surface-variant max-w-md text-lg italic">
+                        "Fırından taze, samimi bir sıcaklıkla sunuluyor. En yüksek kaliteyi sağlamak için küçük partiler halinde üretiyoruz."
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Offering Card 1 -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-8px]">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img alt="Signature Ekşi Maya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A round loaf of signature sourdough bread with a beautiful ear crust sitting on a linen cloth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzbfLKw6FcrAnD_61598jW2o-k1DK1dI1O_WOSjUhXrdszWSXRmu5-Wg4wnv6WK9-938pfUr_HpE38yb5Vz1_w4J3fF9BJLJWWGYuiv-0uxDbjULqSSRhZQrt1RrYR044zsSnmkDEm-zKaZM4PRtS6mnpmSXh-Ozqtl9adH-k-pByJc0n0beKt0HvVa3tzCcdATC0MPdoV5BT_xFu2gR5YAYN2cinEEqo_-SWcAE4CCAcy2ter-GbPdnWMRB0OoWvVlgTOBBVbwV-R"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-bold font-epilogue text-on-surface">Ekşi Maya Ekmeği</h3>
+<span class="text-primary font-bold">$9.50</span>
+</div>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Ekşi Maya</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Vegan</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            24 saat doğal mayalanma ile karmaşık, hafif ekşi bir lezzet ve mükemmel çıtır kabuk.
+                        </p>
+<button class="w-full py-3 rounded-full border border-outline-variant text-on-surface font-bold hover:bg-primary hover:text-on-primary hover:border-primary transition-all">
+                            Sepete Ekle
+                        </button>
+</div>
+<!-- Offering Card 2 -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-8px]">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img alt="Honeycomb Croissant" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close up of a golden flaky croissant showing perfect lamination and a light dusting of powdered sugar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ7_JQt_EN9iV-7pQU_L7rE-aRNCxxdiB822fvvZm32RtehK0UC0uxCGvKvNzjzIbyAvJXxEea8puyJqkDE63UGlL-9cW2pX-y2WRbh6YFqyT8sTpHRBcFsT1WmDs7sYYhjKvIM88JWC9UilCE7wbpE31ZT4r1M1UYzudYQScp9GjUCQSg3IHucmqT6x2LEnVi3kpWMe9tHiQ-fmxc-llh_H1A28RUrK70TuVZOpPejkSBgboLqENTm1z_Bu77c8SBBcPJIwjCGEBY"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-bold font-epilogue text-on-surface">Tereyağlı Kruvasan</h3>
+<span class="text-primary font-bold">$4.75</span>
+</div>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Pasta</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Tereyağlı</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Organik tereyağıyla üç günlük katmanlama ile eşsiz çıtırlık ve bal peteği iç yapısı.
+                        </p>
+<button class="w-full py-3 rounded-full border border-outline-variant text-on-surface font-bold hover:bg-primary hover:text-on-primary hover:border-primary transition-all">
+                            Sepete Ekle
+                        </button>
+</div>
+<!-- Offering Card 3 -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-8px]">
+<div class="aspect-square rounded-lg overflow-hidden mb-6">
+<img alt="Artisan Latte" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A beautifully poured latte in a ceramic mug with latte art of a wheat stalk on top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEEIJMcBPXyghLrwrMcc66iaLWOvVOW1eLtmaqfiUmWrh-8POIWZ78U9AvR42gE9luKn8ygHWmTsYAjSYGuz_8rD3cCumi-rvQd0tCNSxM9gjxx-YW5aqWgt8H2W-5manLCIoy7B8YSs_AXGRdiDkNLCodSTnpYxEQyarCV97298QDzm1ef_EyspibBgPjJWxnUwDzJlSUBiRHqGo4Ve9Hnu-ArNt77QiI1Cig-KjVczyDhhTDfRWHEeutexVMaV-S6jaUsP_IjM-F"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-2xl font-bold font-epilogue text-on-surface">Özel Latte</h3>
+<span class="text-primary font-bold">$5.50</span>
+</div>
+<div class="flex gap-2 mb-4">
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Kahve</span>
+<span class="bg-surface-container-high px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Yerel Kavurma</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            İmza espresso harmanımız, yulaf sütü ve kavrulmuş bal ile deniz tuzu dokunuşu.
+                        </p>
+<button class="w-full py-3 rounded-full border border-outline-variant text-on-surface font-bold hover:bg-primary hover:text-on-primary hover:border-primary transition-all">
+                            Sepete Ekle
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Hikayemiz / Asymmetric Content Section -->
+<section class="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden">
+<img alt="Dining Room" class="w-full h-full object-cover" data-alt="The warm and cozy interior of an artisanal cafe with soft lighting, wooden furniture, and green plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHu20ZHRc2I89tmObiWhYB0mf3fvh4Qz08b-V-3WYOwR-T7tA0jZt0HpsvnUyM8CjH9-e4TeqNRy_Z9pADEVHrj305YyHrxcgCO2F50OfXxPRXP_fi7i6DW178hvX02MH6q8VWnYcOxovqXhO390ZEby1LwehWdKcFmIvr9kT9fqJSXHQFnWNSh7Z5u7YV2Mt7qe7K__qCijWJy2-QHOlXemnaI0hETZlrDW9CIAZyXVY2C2AYuo-G0l8yjkcyjT-T94WFmTCTRkto"/>
+</div>
+<div class="absolute -top-12 -right-12 bg-primary p-8 rounded-xl shadow-xl max-w-xs hidden lg:block">
+<span class="material-symbols-outlined text-on-primary text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">eco</span>
+<p class="text-on-primary font-epilogue text-xl font-bold leading-tight">
+                        Tüm hammaddelerimizi yerel ve güvenilir üreticilerden temin ediyoruz.
+                    </p>
+</div>
+</div>
+<div class="space-y-8">
+<div class="space-y-4">
+<span class="text-secondary font-bold uppercase tracking-widest text-sm">Hikayemiz</span>
+<h2 class="text-4xl md:text-6xl font-extrabold font-epilogue text-primary leading-tight">Kalple Yapılan <br/>Mahalle Lezzeti</h2>
+</div>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    Küçük bir ev mutfağında başlayan Vitrin, "yavaş yemek" hareketini mahallemize geri getirme arzusundan doğdu. İyi ekmeğin zaman gerektirdiğine, güzel bir topluluğun ise emek istediğine inanıyoruz.
+                </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    Her sabah saat 4'te ocak ateşlenir. Yalnızca taş öğütmeli geleneksel unlar ve yerel kaynak suyu kullanıyoruz. Kısayol yok, katkı maddesi yok—sadece ateş, su ve tahılın dürüst simyası.
+                </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-primary font-bold text-lg hover:gap-4 transition-all" href="#">
+                        Hikayemizin Tamamını Okuyun
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Community Pulse / Bülten -->
+<section class="max-w-7xl mx-auto px-8 py-12 mb-24">
+<div class="bg-secondary-container rounded-xl p-12 md:p-20 relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h2 class="text-4xl font-extrabold font-epilogue text-on-secondary-container">Topluluğumuza Katılın</h2>
+<p class="text-on-secondary-fixed-variant text-lg">
+                            Hafta sonu özellerine erken erişim, mevsimsel atölye duyuruları ve baş aşçımızdan gizli tarifler için bültenimize kayıt olun.
+                        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<input class="flex-grow bg-surface-container-low border-none px-6 py-4 rounded-full focus:ring-2 focus:ring-primary text-on-surface outline-none" placeholder="E-posta adresiniz" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:bg-primary-container transition-all">
+                            Katıl
+                        </button>
+</div>
+</div>
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary opacity-10 rounded-full -translate-x-1/2 translate-y-1/2"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-200 w-full rounded-t-[3rem] mt-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-bold text-stone-800 font-epilogue">Vitrin</div>
+<p class="text-stone-500 text-sm max-w-[300px] text-center md:text-left">
+                    © 2024 Vitrin. Tüm Hakları Saklıdır.
+                </p>
+</div>
+<div class="flex gap-12">
+<div class="flex flex-col gap-2">
+<span class="text-orange-900 font-bold mb-2">Keşfet</span>
+<a class="text-stone-500 hover:text-orange-800 underline transition-all text-sm" href="#">Gizlilik</a>
+<a class="text-stone-500 hover:text-orange-800 underline transition-all text-sm" href="#">Kullanım Şartları</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-orange-900 font-bold mb-2">Topluluk</span>
+<a class="text-stone-500 hover:text-orange-800 underline transition-all text-sm" href="#">Sürdürülebilirlik</a>
+<a class="text-stone-500 hover:text-orange-800 underline transition-all text-sm" href="#">İletişim</a>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-stone-300 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-stone-300 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-stone-300 flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">location_on</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
